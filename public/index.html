@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Shortener</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Link Shortener</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#shorten">Shorten Link</a></li>
+      <li><a href="#links">All Links</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="shorten">
+      <h2>Shorten a Link</h2>
+      <form id="shorten-form">
+        <label for="original-link">Enter URL:</label>
+        <input
+          type="url"
+          id="original-link"
+          name="originalLink"
+          placeholder="https://example.com"
+          required
+        />
+        <button type="submit">Shorten</button>
+      </form>
+    </section>
+    <section id="links">
+      <h2>All Shortened Links</h2>
+      <ul id="links-list">
+        <!-- Links will be dynamically inserted here -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Link Shortener. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
